@@ -66,7 +66,7 @@ body{
 .os .mac:hover{
     background-color: rgba(97, 115, 255, 0.727);
 }
-.logo-content button{
+.os button{
     padding: 1rem 2rem;
     border: none;
     font-size: 1rem;
@@ -117,6 +117,332 @@ body{
     color: var(--Gray-700);
 } 
 .info01 p, .info02 p, .info03 p{
-    color: var(--Gray-700);
+    color: var(--Gray-500);
     line-height: 1.5rem;
 }
+.mobile-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+}
+.anywhere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+.anywhere h1{
+    font-size: 2rem;
+    color: var(--Gray-700);
+    font-weight: 600;
+}
+.anywhere p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Gray-500);
+}
+.supercharge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.supercharge h1{
+    font-size: 2rem;
+    color: var(--Gray-700);
+    font-weight: 600;
+}
+.supercharge p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Gray-500);
+}
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 1rem;
+}
+.create, .plain, .preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.create h3, .plain h3, .preview h3{
+    font-size: 2rem;
+    color: var(--Gray-700);
+    font-weight: 600;
+}
+.create p, .plain p, .preview p{
+    text-align: center;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Gray-500);
+}
+.companys{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 1rem;
+}
+.ios-mac{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+    padding: 5rem 0;
+}
+.ios-mac h1{
+    font-size: 2rem;
+    color: var(--Gray-700);
+    font-weight: 600;
+}
+.ios-mac p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Gray-500);
+}
+.os1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.os1 .ios1{
+    background-color: var(--Green-500);
+    box-shadow: 0px 5px 10px rgba(38, 186, 164, 0.5);
+}
+.os1 .ios1:hover{
+    background-color: rgba(38, 186, 164, 0.727);
+}
+.os1 .mac1{
+    background-color: var(--Blue-100);
+    box-shadow: 0 5px 10px rgba(97, 115, 255,0.5);
+}
+.os1 .mac1:hover{
+    background-color: rgba(97, 115, 255, 0.727);
+}
+.os1 button{
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(242, 239, 239);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.c-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+.c-logo img{
+    width: 15%;
+    height: auto;
+}
+.f-links, table, td{
+    padding: 1rem 0.8rem;
+}
+.f-links a{
+   text-decoration: none;
+   color: var(--Gray-700);
+   font-weight: 500;
+}
+.f-links a:hover{
+    color: var(--Green-500);
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.social i:hover{
+    cursor: pointer;
+    color: var(--Green-500);
+}
+
+/* ===========================================
+   📱 MOBILE SMALL (350px – 480px)
+   =========================================== */
+@media (max-width: 480px) {
+
+  body {
+    background: url("images/bg-header-mobile.png") no-repeat top;
+    background-size: contain;
+    padding: 1rem;
+  }
+
+  .logo-content {
+    padding: 4rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .logo-content img {
+    width: 25%;
+  }
+
+  /* Buttons: stack */
+  .os,
+  .os1 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .os button,
+  .os1 button {
+    width: 100%;
+  }
+
+  /* PC section */
+  .pc {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .pc img {
+    width: 100%;
+  }
+
+  .info {
+    gap: 3rem;
+  }
+
+  /* 3 features section */
+  .three {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 1rem;
+  }
+
+  .three h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Company logos */
+  .companys {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+
+  .companys img {
+    width: 40%;
+  }
+
+  /* iOS/Mac buttons */
+  .ios-mac {
+    padding: 3rem 1rem;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .c-logo {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .c-logo img {
+    width: 20%;
+  }
+
+  table {
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+/* ===========================================
+   📱 TABLET (481px – 900px)
+   =========================================== */
+@media (max-width: 900px) {
+
+  .pc {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .three {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .companys {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .c-logo {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+}
+
+/* ===========================================
+   🖥️ DESKTOP LARGE (1440px and up)
+   =========================================== */
+@media (min-width: 1440px) {
+
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .pc {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .three {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .companys {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  footer {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+
+
