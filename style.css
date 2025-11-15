@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  /* ### Primary */
+  --Green-500: rgb(38, 186, 164);
+  --Blue-100: rgb(97, 115, 255);
+  /* ### Neutral */
+  --Gray-700: hsl(210, 10%, 33%);
+  --Gray-500: hsl(201, 11%, 66%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: white;
+    background: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+    padding: 8rem 0;
+}
+.logo-content img{
+    width: 10%;
+    height: auto;
+}
+.logo-content h1{
+    font-size: 2rem;
+    color: var(--Gray-700);
+    font-weight: 600;
+}
+.logo-content p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Gray-500);
+}
+.logo-content .os{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.os .ios{
+    background-color: var(--Green-500);
+    box-shadow: 0px 5px 10px rgba(38, 186, 164, 0.5);
+}
+.os .ios:hover{
+    background-color: rgba(38, 186, 164, 0.727);
+}
+.os .mac{
+    background-color: var(--Blue-100);
+    box-shadow: 0 5px 10px rgba(97, 115, 255,0.5);
+}
+.os .mac:hover{
+    background-color: rgba(97, 115, 255, 0.727);
+}
+.logo-content button{
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.pc-container article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.pc-container article h1{
+    font-size: 2rem;
+    color: var(--Gray-700);
+    font-weight: 600;
+}
+.pc-container article p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Gray-500);
+    line-height: 1.5rem;
+}
+.pc{
+    display: flex;
+    gap: 5rem;
+    /* background-color: antiquewhite; */
+    padding: 5rem 0;
+}
+.pc img{
+    width: 100%;
+    height: auto;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+.info01, .info02, .info03{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.info01 h3, .info02 h3, .info03 h3{
+    color: var(--Gray-700);
+} 
+.info01 p, .info02 p, .info03 p{
+    color: var(--Gray-700);
+    line-height: 1.5rem;
+}
